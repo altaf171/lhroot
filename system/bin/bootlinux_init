@@ -4,6 +4,10 @@ if [ -x /system/xbin/busybox ]; then
 	busybox=/system/xbin/busybox
 elif [ -x /system/bin/busybox ]; then
 	busybox=/system/bin/busybox
+
+elif [ -x /data/adb/ksu/bin/busybox ]; then
+	busybox=/data/adb/ksu/bin/busybox
+
 else
 	echo "Busybox not found!  Install it, dummy!"
 	log "Busybox not found!  Install it, dummy!"
